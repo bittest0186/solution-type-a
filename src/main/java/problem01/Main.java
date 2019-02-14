@@ -21,6 +21,23 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		
+		int count = 0;
+		int res = 0;
+		
+		if(number>=1) {
+			res = number%10;
+			if(res == 3 || res == 6 || res == 9) {
+				count++;
+			}
+			res = number/10;
+			if(res == 3 || res == 6 || res == 9) {
+				count++;
+			}
+		}
+		
+		number = count;
+		
+		return number;
 	}
 }

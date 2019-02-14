@@ -8,17 +8,34 @@ public class Rectangle extends Shape implements Resizable {
 		System.out.println("");
 	}
 
+	
+	
+
+
+
+
+
 	@Override
 	public void resize(double rate) {
+		// TODO Auto-generated method stub
+		
 	}
+
+
 
 	@Override
 	public double getArea() {
-		return 0.;
+		
+		double area = width * height;
+		
+		return area;
 	}
 
 	@Override
 	public double getPerimeter() {
-		return 0.;
+		
+		double perimeter = 2 * (width+height);
+		
+		return perimeter;
 	}
 }
